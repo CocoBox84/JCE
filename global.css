@@ -7,9 +7,8 @@ html {
 
 body {
     background-color: white;
-    height: 5000px;
     margin: 5px;
-    padding: 0px;
+    padding: 5px;
 }
 
 a {
@@ -48,18 +47,56 @@ button:active {
 }
 
 header {
-    background-color: chartreuse;
+    background-color: rgb(11, 207, 11);
     z-index: 100 !important;
-    padding: 5px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    /*height: 38px !important;*/
 }
 
 header .logo {
     padding: 4px;
     float: left;
+}
+
+form input {
+    border-radius: 15px;
+    padding: 5px;
+    color: whitesmoke;
+    background-color: rgb(25, 180, 25);
+    border: 2px rgb(17, 143, 17) solid;
+    width: 100%;
+    display: inline-block;
+    outline: none !important;
+}
+
+form input:focus-visible {
+    background-color: rgb(25, 180, 25);
+}
+
+.container {
+    margin: auto;
+    width: 1000px;
+}
+
+.search-bar {
+    display: inline-block;
+    width: 100%;
+}
+
+#site-nav {
+    margin: none !important;
+    display: block;
+    list-style-type: none !important;
+    list-style: none !important;
+    margin-block: 0px !important;
+    margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    float: right !important;
 }
 
 #site-nav li {
@@ -69,9 +106,10 @@ header .logo {
     padding: 10px 20px;
     cursor: pointer;
     border-left: green 2px solid;
+    border-right: green 2px solid;
     display: inline-block;
     margin-left: 0px;
-    margin-right: -5px;
+    margin-right: -7px;
 }
 
 #site-nav li.last {
@@ -82,4 +120,70 @@ header .logo {
 
 #site-nav li:hover {
     background-color: green;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#services a {
+    background-color: rgb(11, 207, 11);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-left: green 2px solid;
+    border-right: green 2px solid;
+    align-content: center;
+    justify-items: center !important;
+    justify-content: center !important;
+}
+
+#services a:hover {
+    background-color: green;
+    color: chartreuse;
+    text-decoration: none;
+}
+
+#webpage {
+    background-color: blue;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    #services {
+        grid-template-columns: 1fr;
+    }
+
+    #site-nav {
+        display: block;
+        list-style-type: none !important;
+        list-style: none !important;
+        margin: none !important;
+        float: left !important;
+        border: none !important;
+    }
+
+    #site-nav li {
+        background-color: rgb(11, 207, 11);
+        color: white;
+        border: none !important;
+        padding: 30px 50px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: -7px;
+    }
+
+    header .container {
+        margin: none;
+        width: auto;
+    }
+
+    header {
+        height: 300px;
+        display: block !important;
+        position: relative;
+        width: 100% !important;
+    }
 }
