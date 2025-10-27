@@ -9,7 +9,7 @@ body {
     background-color: white;
     margin: 5px;
     padding: 5px;
-    background-image: url("./../images/IMG_20251027_160426.jpg") !important;
+    background-image: url("/images/IMG_20251027_160426.jpg") !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
 }
