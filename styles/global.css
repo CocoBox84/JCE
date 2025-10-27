@@ -9,6 +9,9 @@ body {
     background-color: white;
     margin: 5px;
     padding: 5px;
+    background-image: url("/images/IMG_20251027_160426.jpg") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 a {
@@ -86,6 +89,19 @@ form input:focus-visible {
     width: 100%;
 }
 
+.serv-img {
+    border-radius: 50%;
+    border: 2px darkgreen solid;
+    width: 85px !important;
+    height: 85px !important;
+    background-size: contain;
+    background-repeat: no-repeat !important;
+}
+
+.serv-img.s1 {
+    background-image: url("https://carlquistengines.com/wp-content/uploads/CCE_dyno_sliderimage_3--150x150.jpg");
+}
+
 #site-nav {
     margin: none !important;
     display: block;
@@ -125,6 +141,8 @@ form input:focus-visible {
 #services {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
 }
 
 #services a {
@@ -146,7 +164,8 @@ form input:focus-visible {
 }
 
 #webpage {
-    background-color: blue;
+    /*background-color: blue;*/
+    height: 100% !important;
     margin-top: 50px;
 }
 
