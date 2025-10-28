@@ -11,9 +11,10 @@
 </head>
 <div id="background-image"></div>
 <body>
-    <header>
-        <div class="container">
+    <header id="header">
+        <div id="innerwrap" class="container">
             <a href=""><div class="logo"><!--Logo--><img src="images/IMG_20251027_160426.jpg"></div></a>
+            <button id="toggle-menu" onclick="mobileHandler()">V</button>
             <select id="middle-part">
                 <option>English</option>
             </select>
@@ -46,7 +47,7 @@
         </div>
     </header>
     <div id="webpage">
-        <h3 class="container section" style="justify-content: center !important;">Services</h3>
+        <h3 class="section" style="justify-content: center !important;">Services</h3>
         <div id="services" class="container">
             <a href="services/">
                 <div class="serv-img s1">
@@ -78,6 +79,8 @@
         </div>
     </div>
     <footer></footer>
+
+    <script src="scripts/global.js"></script>
 </body>
 
 </html>

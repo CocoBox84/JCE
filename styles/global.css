@@ -227,6 +227,14 @@ header .container {
     margin-left: 45px !important;
 }
 
+h3.container {
+    width: none;
+}
+
+#toggle-menu {
+    display: none !important;
+}
+
 @media screen and (max-width: 1300px) {
     body {
         display: static !important;
@@ -267,9 +275,9 @@ header .container {
     }
 
     header {
-        height: 300px;
+        height: 150px !important;
         display: block !important;
-        position: relative;
+        position: relative !important;
         width: 100% !important;
     }
 
@@ -282,5 +290,26 @@ header .container {
 
     #middle-part {
         display: none;
+    }
+
+    header .container {
+        display: block !important;
+        height: 150px !important;
+        overflow-y: hidden !important;
+    }
+
+    header.open .container {
+        display: block !important;
+        height: 500px !important;
+        overflow-y: scroll !important;
+    }
+
+    header.open {
+        height: 100% !important;
+    }
+
+    #toggle-menu {
+        display: block !important;
+        width: 100%;
     }
 }
