@@ -64,6 +64,10 @@ button:active {
     border: inset 3px green;
 }
 
+input, select, option {
+    outline: none !important;
+}
+
 header {
     background-color: rgb(11, 207, 11);
     z-index: 100 !important;
@@ -99,6 +103,11 @@ form input:focus-visible {
     width: 1000px;
 }
 
+header .container {
+    justify-content: center;
+    display: flex;
+}
+
 .search-bar {
     display: inline-block;
     width: 100%;
@@ -109,12 +118,20 @@ form input:focus-visible {
     border: 2px darkgreen solid;
     width: 85px !important;
     height: 85px !important;
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat !important;
 }
 
 .serv-img.s1 {
-    background-image: url("https://carlquistengines.com/wp-content/uploads/CCE_dyno_sliderimage_3--150x150.jpg");
+    background-image: url("../images/IMG_20251027_211102_1.jpg");
+}
+
+.section {
+    margin: 8px;
+    color: rgb(37, 37, 37) !important;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 #site-nav {
@@ -191,6 +208,25 @@ form input:focus-visible {
     position: relative !important;
 }
 
+.logo img {
+    height: 30px !important;
+    src: url("../images/IMG_20251027_160426.jpg");
+    border: green 1px outset;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -1px !important;
+}
+
+.logo img:hover {
+    border-style: inset;
+}
+
+#middle-part {
+    width: 32vw !important;
+    margin: 5px !important;
+    margin-left: 45px !important;
+}
+
 @media screen and (max-width: 1300px) {
     body {
         display: static !important;
@@ -235,5 +271,16 @@ form input:focus-visible {
         display: block !important;
         position: relative;
         width: 100% !important;
+    }
+
+    .logo img {
+        height: 100px !important;
+        border-width: 5px;
+        display: block;
+        position: static;
+    }
+
+    #middle-part {
+        display: none;
     }
 }
