@@ -52,24 +52,33 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     border: outset 3px rgb(4, 180, 4);
+    border: outset 3px rgb(90, 90, 90);
+    border: outset 3px rgb(53, 53, 53);
+    background-color: rgb(105, 105, 105);
 }
 
 button:hover {
     background-color: rgb(7, 105, 7);
     border: outset 3px green;
+    border: outset 3px rgb(90, 90, 90);
+    background-color: rgb(95, 95, 95);
 }
 
 button:active {
     background-color: rgb(4, 61, 4);
-    border: inset 3px green;
+    border: inset 3px rgb(53, 53, 53);
+    background-color: rgb(48, 48, 48);
 }
 
-input, select, option {
+input,
+select,
+option {
     outline: none !important;
 }
 
 header {
     background-color: rgb(11, 207, 11);
+    background-color: rgb(105, 105, 105);
     z-index: 100 !important;
     position: fixed;
     top: 0;
@@ -116,6 +125,7 @@ header .container {
 .serv-img {
     border-radius: 50%;
     border: 2px darkgreen solid;
+    border-color: rgb(49, 49, 49);
     width: 85px !important;
     height: 85px !important;
     background-size: 100% 100%;
@@ -155,19 +165,22 @@ header .container {
     cursor: pointer;
     border-left: green 2px solid;
     border-right: green 2px solid;
+    background-color: rgb(105, 105, 105);
+    border-left: gray 2px solid;
+    border-right: gray 2px solid;
     display: inline-block;
     margin-left: 0px;
     margin-right: -7px;
 }
 
-#site-nav li.last {
+/*#site-nav li.last {
     background-color: rgb(11, 207, 11);
     border-left: green 2px solid;
     border-right: green 2px solid;
-}
+}*/
 
 #site-nav li:hover {
-    background-color: green;
+    background-color: darkgray;
 }
 
 #services {
@@ -187,8 +200,9 @@ header .container {
     color: white;
     padding: 10px 20px;
     cursor: pointer;
-    border-left: green 2px solid;
-    border-right: green 2px solid;
+    border-left: gray 2px solid;
+    border-right: gray 2px solid;
+    background-color: rgb(105, 105, 105);
     align-content: center;
     justify-items: center !important;
     justify-content: center !important;
@@ -197,6 +211,8 @@ header .container {
 #services a:hover {
     background-color: green;
     color: chartreuse;
+    background-color: darkgray;
+    color: white;
     text-decoration: none;
 }
 
@@ -212,6 +228,7 @@ header .container {
     height: 30px !important;
     src: url("../images/IMG_20251027_160426.jpg");
     border: green 1px outset;
+    border: rgb(105, 105, 105) 1px outset;
     border-radius: 50%;
     position: absolute;
     margin-top: -1px !important;
@@ -259,7 +276,6 @@ h3.container {
     }
 
     #site-nav li {
-        background-color: rgb(11, 207, 11);
         color: white;
         border: none !important;
         padding: 30px 50px;
