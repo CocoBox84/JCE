@@ -19,7 +19,7 @@
     top: 0;
     right: 0;
     float: right;
-    height: 270px !important;
+    max-height: 270px !important;
     overflow-x: hidden;
     overflow-y: scroll;
     border-radius: 10px;
