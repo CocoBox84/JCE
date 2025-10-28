@@ -5,10 +5,34 @@
 }
 
 .img-container {
-    overflow-y: scroll;
-    overflow-x: scroll;
     width: 500px !important;
     background-color: lightgray;
     padding: 15px !important;
     border-radius: 10px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.description {
+    background-color: gray;
+    top: 0;
+    right: 0;
+    float: right;
+    height: 270px !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+@media screen and (max-width: 1300px) {
+    .img-container {
+        grid-template-columns: 1fr !important;
+        width: 220px !important;
+    }
+
+    .description {
+        width: 200px !important;
+    }
 }
