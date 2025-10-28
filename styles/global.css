@@ -3,15 +3,30 @@ html {
     font-family: sans-serif;
     margin: 0px;
     padding: 0px;
+    color: white;
 }
 
 body {
     background-color: white;
     margin: 5px;
     padding: 5px;
+    color: white;
+    z-index: 2 !important;
+}
+
+#background-image {
+    background-color: none;
     background-image: url("/images/IMG_20251027_160426.jpg") !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 1 !important;
 }
 
 a {
@@ -140,9 +155,14 @@ form input:focus-visible {
 
 #services {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 400px 400px 400px;
     column-gap: 50px;
     row-gap: 50px;
+}
+
+#services.container {
+    margin: auto;
+    width: 1300px !important;
 }
 
 #services a {
@@ -167,11 +187,22 @@ form input:focus-visible {
     /*background-color: blue;*/
     height: 100% !important;
     margin-top: 50px;
+    z-index: 20 !important;
+    position: relative !important;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
+    body {
+        display: static !important;
+    }
+
     #services {
         grid-template-columns: 1fr;
+    }
+
+    #services.container {
+        margin: auto;
+        width: auto !important;
     }
 
     #site-nav {
