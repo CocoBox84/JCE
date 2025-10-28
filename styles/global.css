@@ -16,7 +16,7 @@ body {
 
 #background-image {
     background-color: none;
-    background-image: url("../images/IMG_20251027_160426.jpg") !important;
+    background-image: url("../images/logo.jpg") !important;
     background-size: 100% 100% !important;
     background-position: center;
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@ header .container {
 }
 
 .serv-img.s1 {
-    background-image: url("../images/IMG_20251027_211102_1.jpg");
+    background-image: url("../images/gall5.jpg");
 }
 
 .section {
@@ -248,7 +248,7 @@ h3.container {
     width: none;
 }
 
-#toggle-menu {
+#toggle-menu, #scroll-notice {
     display: none !important;
 }
 
@@ -316,7 +316,7 @@ h3.container {
 
     header.open .container {
         display: block !important;
-        height: 500px !important;
+        height: 300px !important;
         overflow-y: scroll !important;
     }
 
@@ -324,7 +324,7 @@ h3.container {
         height: 100% !important;
     }
 
-    #toggle-menu {
+    #toggle-menu, #scroll-notice {
         display: block !important;
         width: 100%;
     }
